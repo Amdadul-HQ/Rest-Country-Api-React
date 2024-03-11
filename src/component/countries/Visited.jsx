@@ -1,7 +1,7 @@
 import './countries.css'
 export default function Visited ({country,removeVisitedList}) {
     const {name,flags,capital} = country;
-
+    // console.log(visited);
     return(
         <div>
             <h3>Name: {name.common}</h3>
@@ -10,6 +10,7 @@ export default function Visited ({country,removeVisitedList}) {
             <hr />
             <h4>Capital : {capital[0]}</h4>
             <button onClick={() => removeVisitedList(country)}>Remove From Visited list</button>
+        
         </div>
     )
 }
